@@ -1,0 +1,20 @@
+{
+  "name": "not2048",
+  "version": "1.0.0",
+  "description": "A 2048 clone.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "lint": "eslint ./src",
+    "lint:log": "eslint ./src > lint.log",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}

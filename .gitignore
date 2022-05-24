@@ -1,0 +1,16 @@
+node_modules
+*.log
+coverage
+coverage.lcov
+.DS_Store
+dist
+*.d.ts
+*.tgz
+*.tar.gz
+*.exe
+*.c
+*.cpp
+*.bas
+*.pas
+*.o
+tmp/
