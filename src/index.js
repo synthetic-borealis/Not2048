@@ -1,6 +1,6 @@
 const { handlePlayerInput } = require('./player-input');
 
-const GameState = require('./game-state');
+const GameState = require('./game-state-cli');
 
 const gameState = new GameState();
 

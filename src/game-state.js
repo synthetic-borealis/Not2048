@@ -1,6 +1,6 @@
 const { generateValue, randomTile } = require('./utils');
 
-class GameState {
+class GameStateBase {
   constructor() {
     this.board = [
       [0, 0, 0, 0],
@@ -11,37 +11,6 @@ class GameState {
 
     this.fillRandomTile();
     this.fillRandomTile();
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  _padValue(value) {
-    if (value >= 1000) {
-      return ` ${value} `;
-    }
-    if (value >= 100) {
-      return ` *${value} `;
-    }
-    if (value >= 10) {
-      return ` **${value} `;
-    }
-    if (value === 0) {
-      return ' **** ';
-    }
-    return ` ***${value} `;
-  }
-
-  _printRow(row) {
-    const tempRow = row.map(this._padValue);
-    console.log(tempRow.join(' '));
-  }
-
-  _renderBoard() {
-    this.board.forEach((row) => this._printRow(row));
-  }
-
-  renderState() {
-    // score and additional information can be printed here
-    this._renderBoard();
   }
 
   isWinning() {
@@ -152,4 +121,4 @@ class GameState {
   }
 }
 
-module.exports = GameState;
+module.exports = GameStateBase;
